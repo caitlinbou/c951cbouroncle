@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  
+    
+  <category>
+      <pattern>Hi *</pattern>
+      <template>Hi! I look forward to educating you on some jobs available to a Computer Science whiz. 
+      Please select one of the jobs listed below to learn more about it. To make another selection, please type "return".
+      <srai>Job List</srai>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>Job List</pattern>
+      <template>
+          <button>
+              <text>AI Engineer</text>
+              <postback>AI</postback>
+          </button>
+          <button>
+              <text>Game Designer</text>
+              <postback>Game</postback>
+          </button>
+          <button>
+              <text>Technical Project Manager</text>
+              <postback>TPM</postback>
+          </button>
+          <button>
+              <text>Front End Web Developer</text>
+              <postback>Front</postback>
+          </button>
+          <button>
+              <text>Back End Web Developer</text>
+              <postback>Back</postback>
+          </button>
+      </template>
+  </category>
+
+  <category>
+      <pattern>return</pattern>
+      <template><srai>Job List</srai></template>
+  </category>
+  
+  <category>
+      <pattern>AI</pattern>
+      <template>AI Engineer...you must like me!</template>
+  </category>
+
+  <category>
+      <pattern>Game</pattern>
+      <template>Game Designer...I heard Minecraft is hiring!</template>
+  </category>
+  
+  <category>
+      <pattern>TPM</pattern>
+      <template>Technical Project Manager...communication is the key.</template>
+  </category>
+  
+    <category>
+      <pattern>Front</pattern>
+      <template>Front End Web Developer...you can make me pretty!</template>
+  </category>
+  
+    <category>
+      <pattern>Back</pattern>
+      <template>Back End Web Developer...you must LOVE API's!</template>
+  </category>
+</aiml>
